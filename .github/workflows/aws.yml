@@ -36,9 +36,9 @@ env:
   ECR_REPOSITORY: test           # set this to your Amazon ECR repository name
   ECS_SERVICE: sample-app-service1                 # set this to your Amazon ECS service name
   ECS_CLUSTER: default                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: ECS/first-test.json # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: first-test.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: test123           # set this to the name of the container in the
+  CONTAINER_NAME: sample-app           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
