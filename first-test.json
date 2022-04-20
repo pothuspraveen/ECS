@@ -13,7 +13,7 @@
          "logConfiguration": { 
             "logDriver": "awslogs",
             "options": { 
-               "awslogs-group" : "/ecs/fargate-task-definition",
+               "awslogs-group" : "/ecs/ec2-task-definition",
                "awslogs-region": "us-east-1",
                "awslogs-stream-prefix": "ecs"
             }
@@ -30,13 +30,13 @@
    ],
    "cpu": "256",
    "executionRoleArn": "arn:aws:iam::145949733263:role/ecsTaskExecutionRole",
-   "family": "fargate-task-definition",
+   "family": "ec2-task-definition",
    "memory": "512",
    "networkMode": "awsvpc",
    "runtimePlatform": {
         "operatingSystemFamily": "LINUX"
     },
    "requiresCompatibilities": [ 
-       "FARGATE" 
+       "EC2" 
     ]
 }
